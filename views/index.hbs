@@ -1,0 +1,153 @@
+<meta http-equiv="Refresh" content="5">
+<div class="container">
+   <h3 style="color:#314495;">Personal Locator</h3>
+   <h6 style="font-weight:300;">{{today}}</h6>
+   
+   <br />
+   
+    <!-- <nav>
+      <div class="nav nav-tabs nav-nusa" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="tab-head-text">Loc 1</span></a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="tab-head-text">Loc 2</span></a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="tab-head-text">Loc 3</span></a>
+      </div>
+    </nav> -->
+    
+    <br />
+    
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-nusa">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Address</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{#each persons}}
+                <tr>
+                  <th scope="row"></th>
+                  <td>{{name}}</td>
+                  <td>On</td>
+                  <td>{{address}}</td>
+                </tr>
+                {{/each}}
+              </tbody>
+            </table>
+            </div>
+            
+            <br />
+   
+            <!-- <nav aria-label="Page navigation example">
+              <ul class="pagination pag-nusa">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav> -->
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-nusa">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">On</th>
+                  <th scope="col">Off</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Purwanto</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Ibra</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Rifki</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+            
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+            <div class="table-responsive">
+            <table class="table">
+              <thead class="thead-nusa">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">On</th>
+                  <th scope="col">Off</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Rifki</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Ferdi</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Yudi</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Ibra</td>
+                  <td>On</td>
+                  <td>9.30 AM</td>
+                  <td>12.00 AM</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+   <h3 style="color:#314495;">Personal Locator</h3>
+   <h6 style="font-weight:300;">{{today}}</h6>
+   <a href="/admin/logout">Logout</a>
+   <br />
+   
+    <!-- <nav>
+      <div class="nav nav-tabs nav-nusa" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="tab-head-text">Loc 1</span></a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="tab-head-text">Loc 2</span></a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="tab-head-text">Loc 3</span></a>
+      </div>
+    </nav> -->
+    
+    <br />
+    
+    <div class="add-person-form-wrapper col-12">
+      <h4 style="text-align:center">Add Person</h4>
+      <form method="post" action="/api/addperson" class="add-person-form">
+        <div class="form-group">
+          <label for="name">Name :</label>
+          <input class="form-control" id="name" type="text" placeholder="Full Name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Device Address (Bluetooth Address) :</label>
+          <input class="form-control" id="address" type="text" placeholder="Ex: 78:02:F4:1B:91:C4" name="address" required>
+          <input class="form-control" id="status" type="hidden" name="status" value="Out">
+        </div>
+        <input class="btn btn-primary ps-button" type="submit" value="SUBMIT">
+      </form>
+    </div>
+</div>
