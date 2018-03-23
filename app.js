@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 //connect to mongodb with mongoose
-mongoose.connect('mongodb://localhost:27017/psdb');
+mongoose.connect('mongodb://ian:nusanetANC@150.107.149.66:27017/psdb');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
