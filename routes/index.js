@@ -23,7 +23,9 @@ router.get('/admin', function(req, res, next) {
   if(req.session.active == "" || req.session.active == null || req.session.active == "0"){
     res.redirect('/admin/signin');
   } else {
-    res.redirect('/admin/addperson');
+    Person.find(function(err, persons) {
+        res.render('admin', { persons: persons, today: today });
+    });
   }
 });
 
@@ -58,6 +60,16 @@ router.get('/admin/addperson', function(req, res, next) {
     })};
 });
 
+router.get('/:id', function(req, res, next) {
+    if(req.session.active == "" || req.session.active == null || req.session.active == "0"){
+    res.redirect('/admin/signin');
+  }
+  else {
+      Person.findById(req.params.id, function(err, person) {
+        res.render('edit-person', {  person:person, today: today });
+  })};
+});
+
 /* GET login page. */
 router.get('/admin/signin', function(req, res, next) {
         res.render('login', {  title: 'Login - Personal Locator' });
@@ -79,7 +91,7 @@ router.post('/admin/signin', function(req, res, next){
         if (!req.session.active) {
             req.session.active = req.body.username
         }
-            res.redirect('/admin/addperson');
+            res.redirect('/admin');
         }
     })
 });

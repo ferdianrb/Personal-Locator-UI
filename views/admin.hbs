@@ -1,7 +1,7 @@
-<meta http-equiv="Refresh" content="5">
 <div class="container">
    <h3 style="color:#314495;">Personal Locator</h3>
    <h6 style="font-weight:300;">{{today}}</h6>
+   <a href="/admin/addperson"> Add Person </a> | <a href="/admin/logout">Logout</a>
    
    <br />
    
@@ -23,8 +23,8 @@
                 <tr>
                   <th scope="col"></th>
                   <th scope="col">Name</th>
-                  <th scope="col">Status</th>
                   <th scope="col">Address</th>
+                  <th scope="col">Edit</th>
                 </tr>
               </thead>
               <tbody>
@@ -32,8 +32,8 @@
                 <tr>
                   <th scope="row"></th>
                   <td>{{name}}</td>
-                  <td>On</td>
                   <td>{{address}}</td>
+                  <td><a href="/{{_id}}">Edit</a></td>
                 </tr>
                 {{/each}}
               </tbody>

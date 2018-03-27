@@ -21,12 +21,12 @@ router.post('/addperson', function(req, res, next) {
       if (err)
           res.send(err);
        console.log(person)
-      res.redirect('/admin/addperson');
+      res.redirect('/admin');
   });
 });
 
 /* Edit Person */
-router.put('/putperson/:id', function(req, res, next) {
+router.post('/putperson/:id', function(req, res, next) {
   Person.findById(req.params.id, function(err, person) {
     if (err)
       res.send(err);
@@ -38,20 +38,19 @@ router.put('/putperson/:id', function(req, res, next) {
       if (err)
         res.send(err)
       
-      res.json({message: 'Data Updated'})
+      res.redirect('/admin')
     });
   });
 });
 
-router.delete('/delperson/:id', function(req, res, next) {
+router.get('/delperson/:id', function(req, res, next) {
   Person.remove({
     _id: req.params.id
   },
   function(err) {
     if (err)
       res.send(err)
-    
-    res.json({message: 'Succesfully Deleted'})
+    res.redirect('/admin')
   });
 });
 

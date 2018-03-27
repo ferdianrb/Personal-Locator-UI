@@ -12,10 +12,10 @@
 9 verbose lifecycle psloc@0.0.0~start: PATH: /home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/bin/node-gyp-bin:/home/ubuntu/workspace/psloc/node_modules/.bin:/home/ubuntu/.nvm/versions/node/v6.11.2/bin:/usr/local/rvm/gems/ruby-2.4.0/bin:/usr/local/rvm/gems/ruby-2.4.0@global/bin:/usr/local/rvm/rubies/ruby-2.4.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin
 10 verbose lifecycle psloc@0.0.0~start: CWD: /home/ubuntu/workspace/psloc
 11 silly lifecycle psloc@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
-12 silly lifecycle psloc@0.0.0~start: Returned: code: 143  signal: null
+12 silly lifecycle psloc@0.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle psloc@0.0.0~start: Failed to exec start script
 14 verbose stack Error: psloc@0.0.0 start: `node ./bin/www`
-14 verbose stack Exit status 143
+14 verbose stack Exit status 1
 14 verbose stack     at EventEmitter.<anonymous> (/home/ubuntu/.nvm/versions/node/v6.11.2/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at EventEmitter.emit (events.js:191:7)
@@ -32,7 +32,7 @@
 20 error npm  v3.10.10
 21 error code ELIFECYCLE
 22 error psloc@0.0.0 start: `node ./bin/www`
-22 error Exit status 143
+22 error Exit status 1
 23 error Failed at the psloc@0.0.0 start script 'node ./bin/www'.
 23 error Make sure you have the latest version of node.js and npm installed.
 23 error If you do, this is most likely a problem with the psloc package,
