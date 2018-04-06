@@ -1,3 +1,4 @@
+/*
 .table .thead-nusa th {
     color: #fff;
     background-color: #314495 !important;
@@ -37,7 +38,7 @@
 }
 
 .pagination.pag-nusa .page-item .page-link {
-    position: relative;
+    position: flex;
     display: block;
     padding: .5rem .75rem;
     margin-left: -1px;
@@ -65,4 +66,445 @@
     font-weight: 300;
     font-size: 14px;
     cursor: pointer;
+}
+*/
+
+body{
+    background-color:#eeeeee;
+}
+
+.brand {
+    background-color:#314495;
+    padding: .95rem 0;
+    text-align:center;
+}
+
+.brand.mobile-show {
+    background-color:#fff;
+    padding: 0.7rem 0;
+    margin-bottom:0.5rem;
+}
+
+.brand.mobile-show .person-list-text{
+    text-align:left;
+}
+
+.brand h1 {
+    color: #f2f3f4;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-bottom:0;
+}
+
+.brand h5 {
+    color: #f2f3f4;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
+.brand h6 {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin:0;
+}
+
+.mobile-hide{
+    display:none;
+}
+
+.mobile-show{
+    display: -webkit-flex; /* Safari */
+    display:flex;
+}
+
+/*--- Index ---*/
+.row.persons{
+    border-radius:2px;
+    margin:0 -10px 0.4rem -10px;
+    /*border-bottom:1px solid rgba(0,0,0,0.12);*/
+    webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14), 0 1px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14), 0 1px 1px -2px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.persons-head{
+    /*border-top:3px solid #314495;
+    border-bottom:1px solid rgba(0,0,0,0.12);*/
+    background-color:#fff;
+    padding:0.5rem 0.7rem;
+}
+
+.persons-head .text-list{
+    color:#555;
+    font-size:1.1rem;
+    font-weight:700;
+}
+
+.persons-list{
+    background-color:#fff;
+    /*border-bottom:1px solid rgba(0,0,0,0.12);*/
+    padding:0.5rem 0.7rem;
+}
+
+.text-list{
+    color:#333;
+    font-family:'Roboto', sans-serif;
+    font-size:0.97rem;
+    font-weight:300;
+}
+/*--- /Index ---*/
+
+/*--- Login Page ---*/
+.main-login{
+    background-color:#314495;
+    min-height:100vh;
+}
+
+.psloc-form{
+    display: block;
+    width: 100%;
+    padding: .95rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: none;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.psloc-form#username{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.psloc-form#username:focus{
+    outline:none !important;
+}
+
+.psloc-form#password{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.psloc-form#password:focus{
+    outline:none !important;
+}
+
+.login-form{
+    padding:1.2rem;
+}
+/*--- /Login Page ---*/
+
+/*--- Admin Page ---*/
+.logout-button{
+    background-color:#fff;
+    border-radius:2px;
+    color:#314495;
+    font-weight:700;
+    margin-bottom:0.5rem;
+    padding:0.5rem 1rem;
+    text-decoration:none;
+    webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14), 0 1px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14), 0 1px 1px -2px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.logout-button:hover{
+    text-decoration:none;
+}
+
+.add-person-button{
+    background-color:#fff;
+    border-radius:2px;
+    color:#314495;
+    font-weight:700;
+    margin-bottom:0.5rem;
+    padding:0.5rem 1rem;
+    text-decoration:none;
+    webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14), 0 1px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.14), 0 1px 1px -2px rgba(0,0,0,0.12), 0 1px 1px 0 rgba(0,0,0,0.2)
+}
+
+.add-person-button:hover{
+    text-decoration:none;
+}
+
+.psloc-form#name{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.psloc-form#name:focus{
+    outline:none !important;
+}
+
+.psloc-form#address{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.psloc-form#address:focus{
+    outline:none !important;
+}
+
+.edit-icon{
+    font-size:1.6rem;
+    font-weight:500;
+    margin:1.034rem 0;
+}
+/*--- /Admin Page ---*/
+
+/*--- Extra small devices (portrait phones, less than 576px) ---*/
+/*--- No media query since this is the default in Bootstrap ---*/
+
+/*--- Small devices (landscape phones, 576px and up) ---*/
+@media (min-width: 576px) { 
+    
+    /*--- Base Style ---*/
+    .mobile-hide{
+        display:none;
+    }
+    
+    .mobile-show{
+        display:flex;
+    }
+    /*--- /Base Style ---*/
+}
+
+/*--- Medium devices (tablets, 768px and up) ---*/
+@media (min-width: 768px) { 
+    
+    /*--- Base Style ---*/
+    
+    .brand {
+        padding-top:60px;
+        background-color:#eeeeee;
+        text-align:left;
+    }
+    
+    .brand h1 {
+        color: #314495;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    
+    .brand h6 {
+        color: #333;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    
+    .brand-login {
+        background-color:#314495;
+        text-align:left;
+    }
+    
+    .brand-login h1 {
+        color: #fff;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    
+    .brand-login h6 {
+        color: #fff;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 1rem;
+    }
+   
+    .mobile-hide{
+        display:flex;
+    }
+    
+    .mobile-show{
+        display:none;
+    }
+    
+    .persons-head {
+        padding-top:1.2rem;
+    }
+    
+    .persons-list {
+        padding-top:1.2rem;
+    }
+    /*--- /Base Style ---*/
+    
+    /*--- Login Page ---*/
+    /*--- /Login Page ---*/
+    
+    /*--- Admin Page ---*/
+    .edit-icon{
+        font-size:1.2rem;
+        font-weight:500;
+        margin-top:0;
+    }
+    /*--- /Admin Page ---*/
+}
+
+/*--- Large devices (desktops, 992px and up) ---*/
+@media (min-width: 992px) { 
+    
+    /*--- Base Style ---*/
+    
+    body {
+        background-color:#eeeeee;
+        padding-top: 60px;
+    }
+    
+    .brand {
+        background-color:#eeeeee;
+        text-align:left;
+    }
+    
+    .brand h1 {
+        color: #314495;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    
+    .brand h6 {
+        color: #333;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    
+    .brand-login {
+        background-color:#eeeeee;
+        text-align:left;
+    }
+    
+    .brand-login h1 {
+        color: #314495;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    
+    .brand-login h6 {
+        color: #555;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    
+    .mobile-hide{
+        display:flex;
+    }
+    
+    .mobile-show{
+        display:none;
+    }
+    
+    .brand {
+        background-color:#eeeeee;
+        padding: 60px 0;
+    }
+    
+    .persons-head {
+        padding:1.2rem 1rem;
+    }
+    
+    .persons-list {
+        padding:1.2rem 1rem;
+    }
+    /*--- /Base Style ---*/
+    
+    /*--- Login Page ---*/
+    .main-login{
+        background-color:#eeeeee;
+        min-height:100%;
+    }
+    
+    .psloc-form#username{
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: .375rem .75rem;
+        margin-bottom:.5rem;
+    }
+    
+    .psloc-form#password{
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: .375rem .75rem;
+    }
+    /*--- /Login Page ---*/
+    
+    /*--- Admin Page ---*/
+    .edit-icon{
+        font-size:1.2rem;
+        font-weight:500;
+        margin-top:0;
+    }
+    /*--- /Admin Page ---*/
+}
+
+/*--- Extra large devices (large desktops, 1200px and up) ---*/
+@media (min-width: 1200px) { 
+    
+    /*--- Base Style ---*/
+    
+    body {
+        background-color:#eeeeee;
+        padding-top: 60px;
+    }
+    
+    .brand {
+        background-color:#eeeeee;
+        text-align:left;
+    }
+    
+    .brand h1 {
+        color: #314495;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 1.8rem;
+    }
+    
+    .brand h6 {
+        color: #333;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    
+    .mobile-hide{
+        display:flex;
+    }
+    
+    .mobile-show{
+        display:none;
+    }
+    
+    .brand {
+        background-color:#eeeeee;
+        padding: 60px 0;
+    }
+    /*--- /Base Style ---*/
+    
+    /*--- Login Page ---*/
+    .main-login{
+        background-color:#eeeeee;
+        min-height:100%;
+    }
+    
+    .psloc-form#username{
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: .375rem .75rem;
+        margin-bottom: .535rem;
+    }
+    
+    .psloc-form#password{
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        padding: .375rem .75rem;
+    }
+    /*--- /Login Page ---*/
 }

@@ -1,153 +1,112 @@
 <div class="container">
-   <h3 style="color:#314495;">Personal Locator</h3>
-   <h6 style="font-weight:300;">{{today}}</h6>
-   <a href="/admin/addperson"> Add Person </a> | <a href="/admin/logout">Logout</a>
-   
-   <br />
-   
-    <!-- <nav>
-      <div class="nav nav-tabs nav-nusa" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="tab-head-text">Loc 1</span></a>
-        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="tab-head-text">Loc 2</span></a>
-        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="tab-head-text">Loc 3</span></a>
-      </div>
-    </nav> -->
-    
-    <br />
-    
-    <div class="tab-content" id="nav-tabContent">
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="table-responsive">
-            <table class="table">
-              <thead class="thead-nusa">
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Address</th>
-                  <th scope="col">Edit</th>
-                </tr>
-              </thead>
-              <tbody>
-                {{#each persons}}
-                <tr>
-                  <th scope="row"></th>
-                  <td>{{name}}</td>
-                  <td>{{address}}</td>
-                  <td><a href="/{{_id}}">Edit</a></td>
-                </tr>
-                {{/each}}
-              </tbody>
-            </table>
-            </div>
-            
-            <br />
-   
-            <!-- <nav aria-label="Page navigation example">
-              <ul class="pagination pag-nusa">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </li>
-              </ul>
-            </nav> -->
-        </div>
-        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <div class="table-responsive">
-            <table class="table">
-              <thead class="thead-nusa">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">On</th>
-                  <th scope="col">Off</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Purwanto</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Ibra</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Rifki</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-            
-            
-        </div>
-        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-            <div class="table-responsive">
-            <table class="table">
-              <thead class="thead-nusa">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">On</th>
-                  <th scope="col">Off</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Rifki</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Ferdi</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>Yudi</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td>Ibra</td>
-                  <td>On</td>
-                  <td>9.30 AM</td>
-                  <td>12.00 AM</td>
-                </tr>
-              </tbody>
-            </table>
-            </div>
-            
-        </div>
+  
+  <div class="row brand">
+    <div class="col-12 col-md-6 col-lg-8">
+      <h1>Personal Locator</h1>
+      <h6 class="mobile-hide" style="font-weight:300;">{{today}}</h6>
     </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="row">
+        <div class="col-6">
+          <a href="/admin/addperson" class="add-person-button mobile-hide" style="display:relative !important;">Add Person<i class="material-icons ml-auto" style="font-size:1.2rem;font-weight:700;margin-top:2px;">add</i></a>
+        </div>
+        <div class="col-6">
+          <a href="/admin/logout" class="logout-button mobile-hide" style="display:relative;">Logout<i class="material-icons ml-auto" style="font-size:1.2rem;font-weight:700;margin-top:2px;">clear</i></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <!-- Mobile List -->
+  
+  <div class="row brand mobile-show">
+    <div class="col-6">
+      <h6 class="person-list-text" style="color:#555 !important;">Persons List :</h6>
+    </div>
+    <div class="col-6 text-right">
+      <h6 style="color:#555 !important;">{{today}}</h6>
+    </div>
+  </div>
+  
+  <div class="row mobile-show">
+    <div class="col-6 pl-1 pr-1">
+      <a href="/admin/addperson" class="add-person-button mobile-show">Add Person<i class="material-icons ml-auto" style="font-size:1.2rem;font-weight:700;margin-top:2px;">add</i></a>
+    </div>
+    <div class="col-6 pl-1 pr-1">
+      <a href="/admin/logout" class="logout-button mobile-show">Logout<i class="material-icons ml-auto" style="font-size:1.2rem;font-weight:700;margin-top:2px;">clear</i></a>
+    </div>
+  </div>
+  
+  {{#each persons}}
+  <div class="row persons mobile-show">
+    <div class="col-10">
+      <div class="row">
+        <div class="col-12 persons-head" style="border-top-left-radius: 2px;">
+          <span class="text-list">{{name}}</span>
+        </div>
+        <div class="col-12 persons-list" style="padding-top:0;border-bottom-left-radius: 2px;">
+            <span class="text-list">{{address}}</span>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-2">
+      <div class="row ">
+    
+        <div class="col-12 persons-head" style="border-top-right-radius: 2px;border-bottom-right-radius: 2px;">
+          <span class="text-list" ><a href="/{{_id}}" style="color:#314495 !important;font-weight:700;text-decoration:none;"><i class="material-icons mr-auto edit-icon">mode_edit</i></a></span>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  
+  <!-- /Mobile List -->
+   
+  <!-- Desktop List -->
+  {{#each persons}}
+  <div class="row persons mobile-hide">
+    <div class="col-7 persons-head" style="border-top-left-radius: 2px;">
+      <span class="text-list">{{name}}</span>
+    </div>
+    <div class="col-4 persons-list" style="border-bottom-left-radius: 2px;">
+        <span class="text-list">{{address}}</span>
+    </div>
+    <div class="col-1 persons-head" style="border-top-right-radius: 2px;border-bottom-right-radius: 2px;">
+      <span class="text-list" ><a href="/{{_id}}" style="color:#314495 !important;font-weight:700;text-decoration:none;"><i class="material-icons mr-auto edit-icon">mode_edit</i></a></span>
+    </div>
+  </div>
+  {{/each}}
+  <!-- Desktop List -->
+  
+  <!-- <div class="row mobile-hide">
+    <div class="col-12">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-nusa">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each persons}}
+              <tr>
+                <th scope="row"></th>
+                <td>{{name}}</td>
+                <td>{{address}}</td>
+                <td><a href="/{{_id}}">Edit</a></td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+            
+    </div>
+  </div> -->
 
 </div>

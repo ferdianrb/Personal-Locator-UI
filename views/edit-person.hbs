@@ -1,16 +1,71 @@
-<div class="container">
+<main class="main-login">
+    <div class="container" style="padding-top:80px;">
+        <div class="row">
+            
+            <div class="col-12 col-lg-2">
+
+            </div>
+            <div class="col-12 col-lg-8">
+                <div class="row brand-login align-items-center justify-content-center">
+                    <div class="col-12 col-lg-6" style="text-align: center;">
+                        <h1>Edit Data</h1>
+                        <h6 style="font-weight:300;">{{today}}</h6>
+                        <br />
+                        
+                    </div>
+                    
+                    <div class="col-12 col-md-8 col-lg-6 login-form">
+                      <div class="col-12 p-0" style="text-align: center; margin-bottom: 1rem;">
+                        <div class="row justify-content-center">
+                          <div class="col-5" style="padding-right:3px;">
+                            <a href="/admin" class="btn btn-primary ps-button" style="background-color:#fff;color:#314495;border:none;font-weight:900;padding: 0.6rem 0;width:100%;">Home</a>
+                          </div>
+                          <div class="col-5" style="padding-left:3px;">
+                            <a href="/admin/logout" class="btn btn-primary ps-button" style="background-color:#fff;color:#314495;border:none;font-weight:900;padding: 0.6rem 0;width:100%;">Logout</a>
+                          </div>
+                        </div>
+                      </div>
+                      <br />
+                      <form method="POST" action="/api/putperson/{{person._id}}">
+                          <div class="form-group">
+                              <input type="text" id="name" class="psloc-form" name="name" placeholder="Full Name" value="{{person.name}}" required>
+                              <input type="text" id="address" class="psloc-form" name="address" placeholder="Ex: 78:02:F4:1B:91:C4" value="{{person.address}}" required>
+                          </div>
+                          <div class="row">
+                            <div class="col-6" style="padding-right:3px;">
+                              <input class="btn btn-primary ps-button" type="submit" value="Update" style="background-color:#4caf50;border:none;font-weight:900;padding: 0.6rem 0;width:100%;">
+                            </div>
+                            <div class="col-6" style="padding-left:3px;">
+                              <a href="/api/delperson/{{person._id}}" class="btn btn-primary ps-button" style="background-color:#C72F38;border:none;font-weight:900;padding: 0.6rem 0;width:100%;">Delete Person</a></span>
+                            </div>
+                          </div>
+                          
+                      </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-2">
+
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<!-- <div class="container">
    <h3 style="color:#314495;">Personal Locator</h3>
    <h6 style="font-weight:300;">{{today}}</h6>
    <a href="/admin">Home</a> | <a href="/admin/logout">Logout</a>
    <br />
    
-    <!-- <nav>
+    <nav>
       <div class="nav nav-tabs nav-nusa" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="tab-head-text">Loc 1</span></a>
         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="tab-head-text">Loc 2</span></a>
         <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false"><span class="tab-head-text">Loc 3</span></a>
       </div>
-    </nav> -->
+    </nav>
     
     <br />
     
@@ -28,4 +83,4 @@
         <input class="btn btn-primary ps-button" type="submit" value="UPDATE"><span style="float:right"><a href="/api/delperson/{{person._id}}" style="color:red">Delete Person</a></span>
       </form>
     </div>
-</div>
+</div> -->

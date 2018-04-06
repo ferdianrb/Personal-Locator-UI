@@ -1,16 +1,17 @@
-<main >
+<main class="main-login">
     <div class="container" style="padding-top:80px;">
         <div class="row">
+            
             <div class="col-12 col-lg-2">
 
             </div>
             <div class="col-12 col-lg-8">
-                <div class="row align-items-center justify-content-center">
+                <div class="row brand-login align-items-center justify-content-center">
                     <div class="col-12 col-lg-6" style="text-align: center; margin-bottom: 1.5rem;">
-                        <h3 style="color:#314495;">Personal Locator</h3>
-                        <h6 style="font-weight:300;">PT. Media Andalan Nusa</h6>
+                        <h1>Personal Locator</h3>
+                        <h6 style="font-weight:300;display:inline;margin-top:-10px;">Are you here ?</h6>
                     </div>
-                    <div class="col-12 col-md-8 col-lg-6">
+                    <div class="col-12 col-md-8 col-lg-6 login-form">
                         <form method="post" action="/admin/signin">
                             {{#if message}}
                                 <div class="alert alert-danger" role="alert">
@@ -18,19 +19,18 @@
                                 </div>
                             {{/if}}
                             <div class="form-group">
-                                <label for="exampleInputEmail1" style="font-family: 'Roboto';font-size: 12px;color: #314495;">Username</label>
-                                <input type="text" id="username" class="form-control" name="username" placeholder="Enter Username" required>
-                                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1" style="font-family: 'Roboto';font-size: 12px;color: #314495;">Password</label>
-                                <input type="password" id="password" class="form-control" name="password" placeholder="Enter Password" required>
+                                <!-- <label class="mobile-hide" for="username" style="font-family: 'Roboto';font-size: 12px;color: #fff;">Username</label> -->
+                                <input type="text" id="username" class="psloc-form" name="username" placeholder="Username" required>
+                                <!-- <label class="mobile-hide" for="password" style="font-family: 'Roboto';font-size: 12px;color: #fff;">Password</label> -->
+                                <input type="password" id="password" class="psloc-form" name="password" placeholder="Password" required>
                             </div>
                             <!-- <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Check me out</label>
                             </div> -->
-                            <button type="submit" class="btn btn-primary ps-button">Submit</button>
+                            <div class="col-12 p-0">
+                                <button type="submit" class="btn btn-primary ps-button" style="background-color:#4caf50;border:none;font-weight:900;padding: 0.6rem 0;width:100%;">LOGIN</button>
+                            </div>
                         </form>
                     </div>
                 </div>

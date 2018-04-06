@@ -60,6 +60,7 @@ router.get('/admin/addperson', function(req, res, next) {
     })};
 });
 
+/* Get Page Edit Person*/
 router.get('/:id', function(req, res, next) {
     if(req.session.active == "" || req.session.active == null || req.session.active == "0"){
     res.redirect('/admin/signin');
