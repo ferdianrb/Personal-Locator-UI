@@ -29,7 +29,7 @@
                       <form method="POST" action="/api/putperson/{{person._id}}">
                           <div class="form-group">
                               <input type="text" id="name" class="psloc-form" name="name" placeholder="Full Name" value="{{person.name}}" required>
-                              <input type="text" id="address" class="psloc-form" name="address" placeholder="Ex: 78:02:F4:1B:91:C4" value="{{person.address}}" required>
+                              <input type="text" id="address" class="psloc-form" onkeypress="this.value=macAdd(this.value)" maxlength="17" name="address" placeholder="Ex: 78:02:F4:1B:91:C4" value="{{person.address}}" required>
                           </div>
                           <div class="row">
                             <div class="col-6" style="padding-right:3px;">

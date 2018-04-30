@@ -21,6 +21,19 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     
+    <script>
+        function macAdd(val){
+        if (/[^\w:]|_/.test(val))
+        {alert("invalid form only alpanumeric and :")
+        return val}
+        
+        
+        val=val.replace(/[^\w:]|_/g,'')
+        val=val.replace(/(\w{2})([^:])/g,'$1'+':'+'$2')
+        val=val.replace(/:$/,'')
+        return val
+        }
+    </script>
   </head>
   <body>
     
@@ -29,5 +42,12 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <!--<script>
+      setInterval(
+        function(){   
+          $('#index-container').load('#index-container');  
+        }, 10000
+        );
+    </script>-->
   </body>
 </html>
